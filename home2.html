@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PowerHouse Gym - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      padding: 10px 20px;
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      margin-right: 10px;
+    }
+    /* .footer-logo {
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      margin-right: 10px;
+    } */
+
+
+    header p {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      margin-right: auto;
+      padding-top: 10px;
+    }
+
+    header span {
+      /* color: rgb(102, 255, 250); */
+      color: red;
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar li {
+      padding: 25px 15px;
+      font-size: 17px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar li:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: rgb(102, 255, 250);
+    }
+
+    .navbar .login-btn {
+      background-color: rgb(229, 255, 0);
+      color: black;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .navbar .login-btn:hover {
+      background-color: rgb(211, 220, 129);
+    }
+
+    .hero {
+      background: url('gymimg2.jpg') center/cover no-repeat;
+      
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero p {
+      font-size: 22px;
+      max-width: 600px;
+      margin-top: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .hero a {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 18px;
+      background-color: rgb(229, 255, 0);
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero a:hover {
+      background-color: rgb(255, 255, 153);
+    }
+
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h2 {
+      color: black;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .feature-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .feature {
+      background-color: black;
+      padding: 30px;
+      
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h3 {
+      color: rgb(102, 255, 250);
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      color: #ebe1e1;
+      font-size: 16px;
+    }
+
+    /* footer {
+      background-color: black;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    } */
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        padding-left: 0;
+      }
+
+      .navbar li {
+        padding: 10px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+
+    /* footer */
+    /* .footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 10px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.social-icons a {
+  margin-right: 12px;
+  color: rgb(102, 255, 250);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+.footer-right h3 {
+  margin-bottom: 10px;
+  color: rgb(229, 255, 0);
+}
+
+.footer-right ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-right li {
+  margin: 6px 0;
+}
+
+.footer-right a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  color: rgb(102, 255, 250);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  position: relative;
+  color: #aaa;
+  font-size: 13px;
+} */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  color: rgb(229, 255, 0);
+  margin-bottom: 12px;
+}
+
+.footer-column p, .footer-column li {
+  color: #ccc;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-column a:hover {
+  color: rgb(102, 255, 250);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+
+.scroll-top {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: #e60000;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.social-icon {
+  margin-top: 10px;
+  width: 28px;
+  height: 28px;
+}
+.scroll-top:hover {
+  background: #ff3333;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 100%;
+  }
+
+  .scroll-top {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <img src="PHGym.png" alt="Gym Logo" />
+    <p>PowerHouse <span>Gym</span></p>
+    <nav class="navbar">
+      <ul>
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="membership22.php">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="reviews.html">Review</a></li>
+        <li><a href="http://localhost/Gym/admin_login.php" class="login-btn">Login</a></li>
+        <!-- <li><a href="signup.php"></a>Signup</li> -->
+        
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+ <section class="hero">
+    <h1>Welcome to PowerHouse Gym</h1>
+    <p>Your fitness journey starts here. Train hard, stay strong, and reach your peak with us.</p>
+    <a href="http://localhost/Gym/signup2.php">Join Now</a>
+     <!-- <a href="signup.html">Join Now</a> -->
+  </section>
+
+  <!-- Features / Highlights -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-boxes">
+      <div class="feature">
+        <h3>Modern Equipment</h3>
+        <p>We provide state-of-the-art machines and workout spaces for all types of training.</p>
+      </div>
+      <div class="feature">
+        <h3>Expert Trainers</h3>
+        <p>Certified professionals who guide you with tailored workout plans and diet charts.</p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Membership</h3>
+        <p>Choose plans that suit your schedule — daily, monthly, and annual options available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer
+  <footer>
+     Footer Section -->
+<!-- <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="PHGym.png" alt="PowerHouse Gym Logo" class="footer-logo">
+      <p>C-58, Sector 58,<br>Noida - 201301, Uttar Pradesh<br>India</p>
+      <p><strong>Phone:</strong> +91 7999567519</p>
+      <p><strong>Email:</strong> info@powerhousegym.co.in</p>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram" class="social-icon"></a>
+    </div>
+
+    <div class="footer-right">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="home.html">› Home</a></li>
+        <li><a href="about.html">› About Us</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="#">› Terms of Service</a></li>
+        <li><a href="#">› Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright <strong>Powerhouse Gym</strong>. All Rights Reserved</p>
+    <a href="#" class="scroll-top" title="Go to Top">↑</a>
+  </div>
+</footer> -->
+
+  <!-- </footer> -->
+
+
+  <!-- <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="PHGym.png" alt="PowerHouse Gym Logo" class="footer-logo" style="background-color: white;">
+      <p><strong>PowerHouse Gym</strong></p>
+      <p>Near Ramji mandir,<br>Valsad, Gujarat, India</p>
+      <p><strong>Phone:</strong> +91 9898683867</p>
+      <p><strong>Email:</strong> powerhousegym@gmail.com</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/_powerhousegym._?igsh=dW5kbzM0NGI2eHB6">Instagram</a>
+        <!-- <a href="#">Facebook</a>
+        <a href="#">Twitter</a> -->
+      <!-- </div>
+    </div>
+
+    <div class="footer-right">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="home.html">› Home</a></li>
+        <li><a href="about.html">› About Us</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="#">› Terms of Service</a></li>
+        <li><a href="#">› Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <strong>PowerHouse Gym</strong>. All Rights Reserved.</p>
+    <a href="#" class="scroll-top" title="Go to Top">↑</a>
+  </div>
+</footer> --> 
+
+
+
+<!-- <footer class="footer">
+  <div class="footer-container">
+
+    RIGHT side becomes LEFT
+    <div class="footer-right">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="home.html">› Home</a></li>
+        <li><a href="about.html">› About Us</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="membership.html">› Membership</a></li>
+        <li><a href="trainers.html">› Trainers</a></li>
+        <li><a href="gallery.html">› Gallery</a></li>
+        <li><a href="contact.html">› Contact Us</a></li>
+        <li><a href="reviews.html">› Review</a></li>
+      </ul>
+    </div>
+
+    LEFT side becomes RIGHT -->
+    <!-- <div class="footer-left">
+      <img src="PHGym.png" alt="PowerHouse Gym Logo" class="footer-logo" style="background-color: white;">
+      <p style="color: red;"><strong>PowerHouse Gym</strong></p>
+      <p>Near Ramji Mandir,<br>Valsad, Gujarat, India</p>
+      <p><strong>Phone:</strong> +91 9898683867</p>
+      <p><strong>Email:</strong> powerhousegym@gmail.com</p>
+      <div class="social-icons">
+        <div class="social-icons">
+ 
+        <a href="https://www.instagram.com/_powerhousegym._?igsh=dW5kbzM0NGI2eHB6" target="_blank">
+  <img src="instagram.png" alt="Instagram" class="social-icon">
+</a>
+
+</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <strong>PowerHouse Gym</strong>. All Rights Reserved.</p>
+    <a href="#" class="scroll-top" title="Go to Top">↑</a>
+  </div>
+</footer> -->
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: About -->
+    <div class="footer-column">
+      <h3 style="color: red;">PowerHouse Gym</h3>
+      <p>Your destination for strength, energy, and transformation. <br>
+         Join our community and crush your fitness goals!</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">› Home</a></li>
+        <li><a href="about.html">› About Us</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="membership22.php">› Membership</a></li>
+        <li><a href="trainers.html">› Trainers</a></li>
+        <li><a href="gallery.html">› Gallery</a></li>
+        <li><a href="contact.php">› Contact</a></li>
+        <li><a href="reviews.html">› Review</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>Email: powerhousegym@gmail.com</p>
+      <p>Phone: +91 9898683867</p>
+      <p>Location: Valsad, Gujarat, India</p>
+      <a href="https://www.instagram.com/_powerhousegym._" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <strong>PowerHouse Gym</strong>. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

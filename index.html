@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power House Gym</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: white;
+            color: black;
+        }
+
+        .navbar {
+        display: flex;
+        }
+
+            .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+         }
+
+         .navbar li {
+      display: inline-block;
+      padding: 25px 15px;
+      font-size: 17px;
+      transition: transform 0.3s ease;
+    }
+
+        .navbar li:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: rgb(102, 255, 250);
+    }
+
+    .navbar .login-btn {
+      background-color: rgb(229, 255, 0);
+      color: black;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .navbar .login-btn:hover {
+      background-color: rgb(211, 220, 129);
+    }
+
+        
+        /* a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            
+        }
+        .navbar a{
+            
+            font-weight:bold;
+            color: var(--text-color, white);
+            margin-left: 4rem; 
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent; 
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar a:hover,.navbar a:active{
+            border-bottom: 3px solid transparent; 
+            color: var(--main-color, rgb(102, 255, 250)); 
+        }
+         */
+li{
+    display: inline-block;
+    justify-content: flex-start;
+    padding-top:25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+li:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    
+
+}
+.navbar{
+    display: inline-block;
+    background-color: black;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+        
+
+img{
+    width: 80px;
+    height: 80px;
+    margin-right: 6px;
+    
+    
+}
+p{
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+   padding-top: 20px;
+   font-weight: bold;
+}
+span{
+    color: rgb(102, 255, 250);
+}
+
+  div{
+         display:flex;
+         justify-items:flex-start;
+         justify-content:flex-start;
+         background-color: black;
+    } 
+
+/* button{
+    background-color: rgb(102, 255, 250);
+    color: black;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 3rem;
+    transition: background-color 0.3s ease;
+    font-size: large;
+}
+button:hover{
+    background: lightgoldenrodyellow;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+} */
+
+flex{
+background-color: rgb(229, 255, 0);
+border-radius: 25px;
+color: black;
+padding: 0.5rem 1.2rem;
+}
+flex:hover{
+    background:rgb(211, 220, 129);
+}
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="PHGym.png" alt="Power House Gym Logo" style="width: 100px; height: 80px;background-color:white;" >
+
+        <!-- <div class="bx bx menu" id="menu-icon"></div> -->
+        <p>PowerHouse <span>Gym</span></p>
+        <div class="navbar">  
+    <ul class="navbar"> 
+        <li><a href="index.html">Home</a></li>   
+        <!-- <li><a href="home.html">Home</a></li> -->
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="reviews.html">Review</a></li>
+        <li><a href="login.html"><flex>Login</flex></a></li>
+         </ul>
+     
+    </div>
+    
+    <!-- <div class="top-btn">
+        <a href="#" class="nav-btn" style="font-weight:500;">Login</a>
+    </div> -->
+
+</body>
+</html>

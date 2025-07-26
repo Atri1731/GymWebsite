@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - PowerHouse Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      padding: 10px 20px;
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      margin-right: 10px;
+    }
+
+    header p {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      margin-right: auto;
+      padding-top: 10px;
+    }
+
+    header span {
+      color: red;
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline-block;
+      padding: 25px 15px;
+      font-size: 17px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar li:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: rgb(102, 255, 250);
+    }
+
+    .navbar .login-btn {
+      background-color: rgb(229, 255, 0);
+      color: black;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .navbar .login-btn:hover {
+      background-color: rgb(211, 220, 129);
+      color: blue;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+  
+    
+    
+    .about-section h1 {
+      color: black;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .team-section {
+      padding: 60px 20px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+ 
+
+    .team-member {
+      background-color: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+
+    .team-member img {
+      width: 100%;
+      border-radius: 50%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    
+    .team-member img:hover {
+  transform: scale(1.1);
+}
+
+    .team-member h3 {
+      margin-top: 15px;
+      font-size: 20px;
+      color: white;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      color: rgb(160, 162, 178);
+    }
+
+    
+    /* footer {
+      background-color: black;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    } */
+
+    .footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  color: rgb(229, 255, 0);
+  margin-bottom: 12px;
+}
+
+.footer-column p, .footer-column li {
+  color: #ccc;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-column a:hover {
+  color: rgb(102, 255, 250);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <img src="PHGym.png" alt="Gym Logo" />
+    <p>PowerHouse <span>Gym</span></p>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>   
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="membership22.php">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="reviews.html">Review</a></li>
+        <li><a href="signin222.php" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <h1>About PowerHouse Gym</h1>
+    <p>
+      PowerHouse Gym has been a leader in fitness since 1990, delivering exceptional training environments, world-class equipment, and expert trainers. 
+      Our mission is to empower every individual to achieve their health and fitness goals through personalized support, innovative programs, and a strong sense of community.
+      Whether you're just beginning or you're an experienced athlete, PowerHouse Gym provides the tools, motivation, and support you need to transform your body and mind.
+    </p>
+  </section>
+
+  <!-- Our Team Section -->
+  <section class="team-section">
+    <h2>Meet Our Trainers</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="t1.jpg" alt="Trainer 1">
+        <h3>Ravi Patel</h3>
+        <p>Certified Strength & Conditioning Coach</p>
+      </div>
+      <div class="team-member">
+        <img src="t2.jpg" alt="Trainer 2">
+        <h3>Jackie Warner</h3>
+        <p>Yoga & Wellness Expert</p>
+      </div>
+      <div class="team-member">
+        <img src="t3.jpeg" alt="Trainer 3">
+        <h3>Arjun Singh</h3>
+        <p>HIIT & Weight Loss Specialist</p>
+      </div>
+      <div class="team-member">
+        <img src="t4.jpg" alt="Trainer 3">
+        <h3>Arti Patel</h3>
+        <p>Nutritionist & Weight Loss Specialist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    &copy; 2025 PowerHouse Gym. All Rights Reserved.
+  </footer> -->
+
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: About -->
+    <div class="footer-column">
+      <h3 style="color: red;">PowerHouse Gym</h3>
+      <p>Your destination for strength, energy, and transformation. <br>
+         Join our community and crush your fitness goals!</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home2.html">› Home</a></li>
+        <li><a href="about.html">› About Us</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="membership22.php">› Membership</a></li>
+        <li><a href="trainers.html">› Trainers</a></li>
+        <li><a href="gallery.html">› Gallery</a></li>
+        <li><a href="contact.php">› Contact</a></li>
+        <li><a href="reviews.html">› Review</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>Email: powerhousegym@gmail.com</p>
+      <p>Phone: +91 9898683867</p>
+      <p>Location: Valsad, Gujarat, India</p>
+      <a href="https://www.instagram.com/_powerhousegym._" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <strong>PowerHouse Gym</strong>. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

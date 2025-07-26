@@ -1,0 +1,71 @@
+form{
+  /* margin: 100px 100px 100px 100px;   */
+  margin: 0%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen height */
+    background-color: #e6f7ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("gym2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+
+* {
+    text-align: center;
+    justify-content:center;
+}
+div{
+    align-items: center;
+    justify-content: center;
+}
+    
+
+
+fieldset{
+    /* margin: 10px 10px 10px 10px; */
+    padding: auto;
+    width: 500px;
+    background-color: lightblue;
+    border: 2px  rgb(193, 234, 12) solid;
+    border-radius: 10px;
+    background-color:black;
+  opacity: 0.7;
+  color: white;
+  font-weight: bold;
+  
+
+}
+h1{
+    color: rgb(193, 234, 12);
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* .signup{
+ align: center;   
+}
+.input[type=submit]
+{
+    
+    text-align: center;
+} */
+
+button {
+  margin-top: 10px;
+  background-color: #007BFF;
+  height: 20%;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
+}
+
+

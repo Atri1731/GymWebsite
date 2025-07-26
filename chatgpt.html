@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Power House Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+      background-color: black;
+      padding: 10px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      background-color: white;
+    }
+
+    .logo p {
+      color: white;
+      font-weight: 600;
+      font-size: 26px;
+    }
+
+    .logo span {
+      color: rgb(102, 255, 250);
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .navbar ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .navbar li {
+      margin-left: 2rem;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: rgb(102, 255, 250);
+      text-decoration: underline;
+    }
+
+    .login-btn {
+      background-color: rgb(102, 255, 250);
+      color: black;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 2rem;
+      transition: 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: lightgoldenrodyellow;
+      transform: scale(1.1);
+    }
+
+    /* --- Media Queries for responsiveness --- */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      .login-btn {
+        margin-top: 10px;
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="PHGym.png" alt="Power House Gym Logo">
+      <p>PowerHouse <span>Gym</span></p>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contactUs">Contact Us</a></li>
+        <li><a href="#review">Review</a></li>
+      </ul>
+      <button class="login-btn">Login</button>
+    </nav>
+  </div>
+</header>
+
+</body>
+</html>
