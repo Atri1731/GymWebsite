@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PowerHouse Gym</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+p {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+span {
+  color: rgb(102, 255, 250);
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  padding: 15px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: rgb(102, 255, 250);
+}
+
+flex {
+  background-color: rgb(229, 255, 0);
+  border-radius: 25px;
+  color: black;
+  padding: 0.5rem 1.2rem;
+}
+
+flex:hover {
+  background: rgb(211, 220, 129);
+}
+
+/* 🔹 Mobile Navigation */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* 🔹 Responsive Settings */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar li {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  
+  <header class="navbar-container">
+    <img src="PHGym.png" alt="Power House Gym Logo" class="logo">
+
+    <p>PowerHouse <span>Gym</span></p>
+
+    <!-- Hamburger icon for mobile -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <!-- Navigation Links -->
+    <ul class="navbar" id="nav-links"> 
+      <li><a href="index.html">Home</a></li>   
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="trainers.html">Trainers</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="reviews.html">Review</a></li>
+      <li><a href="login.html"><flex>Login</flex></a></li>
+    </ul>
+  </header>
+
+</body>
+</html>

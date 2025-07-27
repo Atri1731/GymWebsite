@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - PowerHouse Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      padding: 10px 20px;
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      margin-right: 10px;
+    }
+
+    header p {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      margin-right: auto;
+      padding-top: 10px;
+    }
+
+    header span {
+      color: rgb(102, 255, 250);
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar li {
+      display: inline-block;
+      padding: 25px 15px;
+      font-size: 17px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar li:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: rgb(102, 255, 250);
+    }
+
+    .navbar .login-btn {
+      background-color: rgb(229, 255, 0);
+      color: black;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .navbar .login-btn:hover {
+      background-color: rgb(211, 220, 129);
+    }
+
+    .contact-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 36px;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .contact-form {
+      flex: 1 1 350px;
+      max-width: 500px;
+      background-color: black;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: black;
+      color: white;
+    }
+
+    .contact-form textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .contact-form button {
+      background-color: rgb(91, 86, 86);
+      color: white;
+      padding: 12px 25px;
+      border: 2px solid rgb(229, 255, 0);
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: rgb(102, 255, 250);
+      color: black;
+    }
+
+    .contact-info {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* footer {
+      background-color: black;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    } */
+
+    .footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  color: rgb(229, 255, 0);
+  margin-bottom: 12px;
+}
+
+.footer-column p, .footer-column li {
+  color: #ccc;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-column a:hover {
+  color: rgb(102, 255, 250);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <img src="PHGym.png" alt="Gym Logo" />
+    <p>PowerHouse <span>Gym</span></p>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>   
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="reviews.html">Review</a></li>
+        <li><a href="signin.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Whether you have a question or just want to say hello, feel free to reach out.</p>
+
+    <div class="contact-container">
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Your Phone Number" />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Our Address</h2>
+        <p>PowerHouse Gym</p>
+        <p>Dungri, Near Ramji mandir,Valsad, Gujarat</p>
+        <p>Email: powerhousegym@gmail.com</p>
+        <p>Phone: +91 9898 683867</p>
+        <p>Hours: Mon - Sat: 5am – 10pm</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    &copy; 2025 PowerHouse Gym. All Rights Reserved.
+  </footer> -->
+
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: About -->
+    <div class="footer-column">
+      <h3 style="color: red;">PowerHouse Gym</h3>
+      <p>Your destination for strength, energy, and transformation. <br>
+         Join our community and crush your fitness goals!</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">› Home</a></li>
+        <li><a href="about.html">› About Us</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="membership.html">› Membership</a></li>
+        <li><a href="trainers.html">› Trainers</a></li>
+        <li><a href="gallery.html">› Gallery</a></li>
+        <li><a href="contact.html">› Contact</a></li>
+        <li><a href="reviews.html">› Review</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>Email: powerhousegym@gmail.com</p>
+      <p>Phone: +91 9898683867</p>
+      <p>Location: Valsad, Gujarat, India</p>
+      <a href="https://www.instagram.com/_powerhousegym._" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <strong>PowerHouse Gym</strong>. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

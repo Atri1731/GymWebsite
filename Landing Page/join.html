@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Now - PowerHouse Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-image: url("gymimg1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .join-box {
+      background-color: black;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #d4ff00;
+      border: 2px solid #d4ff00;
+      width: 100%;
+      max-width: 500px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    .join-box h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: rgb(229, 255, 0);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #9db00e;
+      background-color: white;
+      color: black;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: black;
+      font-weight: bold;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    .join-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(102, 255, 250);
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+
+    .join-box button:hover {
+      background-color: #80fff2;
+    }
+
+    @media (max-width: 480px) {
+      .join-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="join-box">
+    <h1>Join PowerHouse Gym</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="plan">Select Plan</label>
+        <select id="plan" name="plan" required>
+          <option value="">-- Choose Plan --</option>
+          <option value="daily">Daily</option>
+          <option value="monthly">Monthly</option>
+          <option value="annual">Annual</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="goals">Your Fitness Goals</label>
+        <textarea id="goals" name="goals" placeholder="Describe your goals..."></textarea>
+      </div>
+
+      <button type="submit">Join Now</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - PowerHouse Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-image:url("gymimg1.jpg");
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      
+
+    }
+
+    .login-box {
+      background-color: black;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow:  0 0 20px #d4ff00;
+      border: 2px solid #d4ff00;
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+       opacity: 0.7; 
+       color: white;
+      
+      
+    }
+
+    .login-box h1 {
+      margin-bottom: 25px;
+      color: white;
+      font-size: 32px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #9db00e;
+      background-color: white; 
+      
+    
+    }
+   input::placeholder {
+  color: black ;
+  font-weight: bold;
+}
+
+    .login-box input[type="submit"] {
+      background-color: rgb(102, 255, 250);
+      color: black;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background-color: #80fff2;
+    }
+
+    .login-box p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .login-box .signup-btn {
+      background-color: rgb(229, 255, 0);
+      color: black;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-box .signup-btn:hover {
+      background-color: rgb(211, 220, 129);
+    }
+
+    @media (max-width: 480px) {
+      .login-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h1>Sign In</h1>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Sign In">
+    </form>
+    <p>Don't have an account?</p>
+    <a href="signup.html">
+      <button class="signup-btn" type="button">Sign Up</button>
+    </a>
+  </div>
+
+</body>
+</html>
